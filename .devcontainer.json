@@ -1,0 +1,17 @@
+{
+	"name": "bash-crud devcontainer",
+	"dockerComposeFile": "./docker-compose.yml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "none",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"timonwong.shellcheck",
+				"GitHub.vscode-github-actions"
+			]
+		}
+	}
+}

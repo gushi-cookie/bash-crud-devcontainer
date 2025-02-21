@@ -1,0 +1,19 @@
+services:
+  devcontainer:
+    image: bash-crud-devcontainer
+    container_name: bash-crud-devcontainer
+    user: ${CONTAINER_UID}:${CONTAINER_GID}
+    runtime: runsc
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        CONTAINER_UID: ${CONTAINER_UID}
+        CONTAINER_GID: ${CONTAINER_GID}
+    volumes:
+      - ../bash-crud/:/workspace:cached
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2gb
