@@ -11,7 +11,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"timonwong.shellcheck",
 				"GitHub.vscode-github-actions",
-				"jetmartin.bats"
+				"jetmartin.bats",
+				"mads-hartmann.bash-ide-vscode"
 			]
 		}
 	}
