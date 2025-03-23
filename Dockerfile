@@ -16,4 +16,6 @@ RUN git clone https://github.com/bats-core/bats-core.git && \
 RUN groupadd --gid ${CONTAINER_GID} developer && \
 		useradd --uid ${CONTAINER_UID} --gid developer --shell /bin/bash --create-home developer
 
+RUN chown ${CONTAINER_UID}:${CONTAINER_GID} /usr/share/awk
+
 CMD ["sleep", "infinity"]
